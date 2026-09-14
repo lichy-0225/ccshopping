@@ -1,0 +1,30 @@
+[
+  {
+    "bundle_id": "B101-202",
+    "sku_ids": ["P101", "P202"],
+    "price": 428,
+    "scenario": "偏干、敏感倾向、希望简单护理",
+    "limitations": "先确认预算；不以修复或治疗承诺效果。"
+  },
+  {
+    "bundle_id": "B102-203",
+    "sku_ids": ["P102", "P203"],
+    "price": 368,
+    "scenario": "偏油、可接受香味、喜欢清爽感",
+    "limitations": "先确认预算与香味偏好。"
+  },
+  {
+    "bundle_id": "B201",
+    "sku_ids": ["P201"],
+    "price": 229,
+    "scenario": "有焕肤经验、状态稳定、希望改善粗糙",
+    "limitations": "先问敏感/不适和使用经验；说明注意防晒，不强推。"
+  },
+  {
+    "bundle_id": "B301",
+    "sku_ids": ["P301"],
+    "price": 49,
+    "scenario": "明确出差或旅行场景",
+    "limitations": "仅在旅行携带需求明确时推荐。"
+  }
+]

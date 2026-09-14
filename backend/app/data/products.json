@@ -1,0 +1,69 @@
+[
+  {
+    "sku_id": "P101",
+    "name": "云感氨基酸舒润洁面乳",
+    "category": "洁面",
+    "spec": "150ml",
+    "price": 169,
+    "fragrance_free": true,
+    "tags": ["无香", "温和清洁", "保湿舒润"],
+    "limitations": "个体差异，首次使用建议局部测试",
+    "source": "澄初个人护理智能导购品牌手册"
+  },
+  {
+    "sku_id": "P102",
+    "name": "净澈控油洁面啫喱",
+    "category": "洁面",
+    "spec": "150ml",
+    "price": 149,
+    "fragrance_free": false,
+    "tags": ["清爽控油", "清洁感较强"],
+    "limitations": "带香味，对香味敏感者不优先",
+    "source": "澄初个人护理智能导购品牌手册"
+  },
+  {
+    "sku_id": "P201",
+    "name": "焕亮果酸细致精华液",
+    "category": "精华",
+    "spec": "30ml",
+    "price": 229,
+    "fragrance_free": true,
+    "stimulant": true,
+    "tags": ["改善粗糙"],
+    "limitations": "敏感、受损或正在不适的皮肤不推荐；需注意防晒",
+    "source": "澄初个人护理智能导购品牌手册"
+  },
+  {
+    "sku_id": "P202",
+    "name": "屏护神经酰胺保湿乳",
+    "category": "保湿",
+    "spec": "50ml",
+    "price": 259,
+    "fragrance_free": true,
+    "tags": ["保湿舒润"],
+    "limitations": "不承诺治疗；明显不适建议咨询专业人士",
+    "source": "澄初个人护理智能导购品牌手册"
+  },
+  {
+    "sku_id": "P203",
+    "name": "水漾轻盈保湿凝露",
+    "category": "保湿",
+    "spec": "50ml",
+    "price": 219,
+    "fragrance_free": false,
+    "tags": ["清爽控油"],
+    "limitations": "带淡香，对香味敏感者不优先",
+    "source": "澄初个人护理智能导购品牌手册"
+  },
+  {
+    "sku_id": "P301",
+    "name": "随行旅行分装瓶礼盒",
+    "category": "旅行用品",
+    "spec": "4个可重复使用小瓶",
+    "price": 49,
+    "fragrance_free": true,
+    "tags": ["旅行携带"],
+    "limitations": "不属于护肤功效产品",
+    "source": "澄初个人护理智能导购品牌手册"
+  }
+]

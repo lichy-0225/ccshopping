@@ -1,0 +1,8 @@
+[
+  {
+    "policy_id": "knowledge_boundary",
+    "known": false,
+    "unsupported_topics": ["促销", "赠品", "线上同价", "退换货", "渠道授权", "动态库存"],
+    "reply": "需要向门店或系统确认"
+  }
+]
