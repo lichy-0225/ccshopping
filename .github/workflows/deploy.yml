@@ -1,0 +1,46 @@
+name: Deploy CCShopping
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          port: ${{ secrets.SERVER_PORT }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+
+            cd /www/ccshopping
+
+            echo "== Pull latest code =="
+            git fetch origin
+            git reset --hard origin/master
+
+            echo "== Build frontend =="
+            cd frontend
+            npm install
+            npm run build
+
+            echo "== Update backend dependencies =="
+            cd ../backend
+            source .venv/bin/activate
+            pip install -r requirements.txt
+
+            echo "== Restart backend =="
+            systemctl restart ccshopping
+
+            echo "== Health check =="
+            sleep 3
+            curl -f http://127.0.0.1:8000/api/v1/health
+
+            echo "== Deploy success =="
