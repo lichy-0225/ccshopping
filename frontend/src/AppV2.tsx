@@ -112,6 +112,5 @@ export default function AppV2() {
     <section className="chat" aria-live="polite"><div className="examples">{examples.map((example) => <button key={example} onClick={() => void submit(example)}>{example}</button>)}</div>{messages.map((message, index) => <MessageItem message={message} key={`${message.role}-${index}`} />)}{loading && <article className="message assistant"><div className="message-head"><span>导购</span><p className="typing">正在整理建议…</p></div></article>}</section>
     {error && <div className="error"><span>{error}</span><button onClick={() => void submit(messages[messages.length - 1]?.content ?? "")}>重试</button></div>}
     <form className="composer" onSubmit={(event) => { event.preventDefault(); void submit(); }}><input value={input} onChange={(event) => setInput(event.target.value)} placeholder="例如：我预算 200 元，想买无香洁面" disabled={loading} /><button type="submit" disabled={!canSend}>发送</button></form>
-    <p className="status">Agent V2：工具调用与商品事实由后端控制。</p>
   </section></main>;
 }
